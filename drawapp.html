@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+		<script src="drawapp.js">
+		</script>
+	</head>
+	<body>
+		<div align="left">
+			<input type="button" id="b" value="Clear" style="width:80px; height:40px; font-size:18px" onclick="clearCanvas()">
+
+			PenSize :    
+			<input type="radio" name="pen" value="p1" style="width:15px; height:15px" onclick="changePensize()"> 1 px
+			<input type="radio" name="pen" value="p2" style="width:15px; height:15px" checked="checked" onclick="changePensize()"> 3 px
+			<input type="radio" name="pen" value="p3" style="width:15px; height:15px" onclick="changePensize()"> 5 px
+			<div>
+				Latency :   
+				<input type="radio" name="latency" value="l1" style="width:15px; height:15px" checked="checked" onclick="changeLatency()"> 40 ms
+				<input type="radio" name="latency" value="l2" style="width:15px; height:15px" onclick="changeLatency()"> 50 ms
+				<input type="radio" name="latency" value="l3" style="width:15px; height:15px" onclick="changeLatency()"> 60 ms
+				<input type="radio" name="latency" value="l4" style="width:15px; height:15px" onclick="changeLatency()"> 70 ms
+				<input type="radio" name="latency" value="l5" style="width:15px; height:15px" onclick="changeLatency()"> 80 ms
+				<input type="radio" name="latency" value="l6" style="width:15px; height:15px" onclick="changeLatency()"> 90 ms
+				<input type="radio" name="latency" value="l7" style="width:15px; height:15px" onclick="changeLatency()"> 100 ms
+				<input type="radio" name="latency" value="l8" style="width:15px; height:15px" onclick="changeLatency()"> 110 ms
+				<input type="radio" name="latency" value="l9" style="width:15px; height:15px" onclick="changeLatency()"> 120 ms
+				<input type="radio" name="latency" value="l10" style="width:15px; height:15px" onclick="changeLatency()"> 130 ms
+				<input type="radio" name="latency" value="l11" style="width:15px; height:15px" onclick="changeLatency()"> 140 ms
+				<input type="radio" name="latency" value="l12" style="width:15px; height:15px" onclick="changeLatency()"> 150 ms
+				<input type="radio" name="latency" value="l13" style="width:15px; height:15px" onclick="changeLatency()"> 200 ms
+				<input type="radio" name="latency" value="l14" style="width:15px; height:15px" onclick="changeLatency()"> 250 ms
+			</div>
+			<div>
+				X calibration (→が正) <input type="number" id="calib_x" value="0"> px
+				<input type="button" id="b2" value="Set calibration" onclick="setCalibration()"><br>
+				Y calibration (↑が正) <input type="number" id="calib_y" value="0"> px<br>
+			</div>
+			<!--<input type="text" id="t" style="width:500px; height:80px; font-size:30px">-->
+		</div>
+			<canvas id="c" style="position:relative; background-color:lightgray;" width="1600" height="900">
+			</canvas>
+	</body>
+</html>
+
+
